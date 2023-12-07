@@ -1,0 +1,12 @@
+
+{% if elems %}
+    <ul>
+    {% for e in elems %}
+        <!-- <li><a href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li> -->
+        <!-- <li>{{ e.name }}{{ e.id }}</li> -->
+        {%include "menu.html" %}
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No elems are available.</p>
+{% endif %}
